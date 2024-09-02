@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #FF676D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.caixa{
+
+    max-width: 400px;
+    width: 100%;
+
+}   
+
+
+.caixa .caixa-pesquisa{
+    position: relative;
+    height: 50px;
+    margin: auto;
+    max-width: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0,25);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .caixa-pesquisa{
+    max-width: 380px;
+}
+
+.caixa-pesquisa input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.caixa-pesquisa .icone{
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #FFF;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #FF676D;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+check:checked ~ .caixa-pesquisa .icone{
+    background: #FF676D;
+    color: #FFF;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check{
+    display: none;
+}
